@@ -27,9 +27,11 @@ To use the Dockerfile, first navigate to the directory that contains the DOckerf
 
 To create a public repo in Dockerhub, log into a Dockerhub account and create a new repo, and mark the repo as public so that images can be pulled and pushed to and from the repo. To link to your Dockerhub account, go to the security section in the Dockerhub settings. Create a new access token, copy it, and type it in when logging in to Dockerhub from the terminal, using the command `docker login -u "username"`. To push the container image to Dockerhub, ensure that you are signed in. Then, build an image if you have not done so already. Then, type `docker push "username"/"repository"`.
 
-[Link to Dockerhub Repo for this project] (https://hub.docker.com/repository/docker/cacanuck/angular-site/general)
+[Link to Dockerhub Repo for this project](https://hub.docker.com/repository/docker/cacanuck/angular-site/general)
 
 
 To set up secrets for Github Actions, go to the settings section of the Github REPOSITORY, and click on secrets -> actions. Then name the secret, and enter in the box what information the secret will contain, be it a username, password, or token.  For this project, there is a DOCKER_USERNAME secret and a DOCKER_TOKEN secret.
 
 The workflow creates the container image for tha angular site, and then pushes it to DOckerhub.  If someone was to use the workflow file to duplicate the project, they would need to change the Github secrets to have their own login credentials, as well as change the name of the repository that it would be pushed to.
+
+[Link to Workflow file for this project](https://github.com/WSU-kduncan/f24cicd-Cacanuck/blob/main/docker_workflow.yml)
