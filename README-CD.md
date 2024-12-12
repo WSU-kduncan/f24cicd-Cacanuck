@@ -6,7 +6,7 @@
 
 3. The Github workflow that I have created works when a commit is pushed or a tag is pushed to the Git repo. It sends the tagged version of the angular site to Dockerhub.
 
-[Link to DOckerhub Repo for this project](https://hub.docker.com/repository/docker/cacanuck/angular-site/general)
+[Link to Dockerhub Repo for this project](https://hub.docker.com/repository/docker/cacanuck/angular-site/general)
 
 
 ## Part 2
